@@ -1,0 +1,5 @@
+.cards{
+    display: flex;
+    background-color: rgb(241, 237, 228);
+    border: 1px solid black;
+}
