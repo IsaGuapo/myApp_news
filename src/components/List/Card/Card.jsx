@@ -1,26 +1,31 @@
 import './Card.css';
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
 
-const Card = ({ searchNews }) => {
-    return (
+
+
+export class Card extends Component {
+  constructor(props) {
+    super(props)
+  // enviamos el estado del array a List
+    this.state = {
+       //guardamos el [] de noticiar creadas por nosotros = lo que haya en FORM
+    }
+  }
+  
+  
+    render ()  {
+      const {section,title,published_date,abstract} = this.props.info
+      return (
         <div className="cards">
-            {
-            searchNews.map(topNews => 
-              <div >
-                  <p>Sección: {topNews.section} </p>
-                  <p>Titular: {topNews.title} </p>
-                  <p>Fecha:{topNews.published_date}</p>
-                  <p>Noticia: {topNews.abstract}</p>
-                  <hr />
-              </div>
-            )
-            }
+            <p>Sección: {section} </p>
+            <p>Titular: {title} </p>
+            <p>Fecha:{published_date}</p>
+            <p>Noticia: {abstract}</p>
+            <button onClick={this.props.deleteNew}>Borrar</button>
+           
         </div>
     );
-}
-
-Card.defaultProps = {
-  searchNews: []
   }
+}
 
 export default Card;
