@@ -14,8 +14,8 @@ class Home extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const name = this.name.current.value // por referencia 
-    
+    const name = event.target.elements.name.value // se rellena por referencia
+    this.setState({ name })
     // contexto  login
     const {login} = this.context
     login(name);
