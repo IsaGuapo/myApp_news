@@ -15,12 +15,17 @@ class List extends Component {
   }
 
   async componentDidMount(){
-    const newAxios = await axios.get(`https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=zGBjnMpFL4CT1jA5fNOIIeMUWe9N1YUo`);
-    // console.log(newAxios);
-    const data = newAxios.data.results.slice(0,5)
-    const result = data.concat(this.props.stateData)
-    console.log(data)
-    this.setState({topNews: result})     
+    try{
+      const newAxios = await axios.get(`https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=${process.env.REACT_APP_APIKEY}`);
+      // console.log(newAxios);
+      const data = newAxios.data.results.slice(0,5)
+      const result = data.concat(this.props.stateData)
+      console.log(data)
+      this.setState({topNews: result})  
+    } catch (e){
+      console.log("error")
+    }
+       
   
   }
 

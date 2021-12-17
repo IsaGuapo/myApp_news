@@ -26,9 +26,7 @@ class Main extends Component {
           <Route path="/home" element ={<Home/>} />
           <Route path="/form" element ={<Form createNews={this.createNews}/>} />
           {/* Este state data nos da el estado del la creacion de la nueva noticia */}
-          <Route path="/list" element ={<List stateData={this.state.addNew}/>} /> 
-
-       
+          <Route path="/list" element ={<List stateData={this.state.addNew}/>} />  
       </Routes>  
     </main>;
   }

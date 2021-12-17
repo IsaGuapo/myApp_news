@@ -28,7 +28,7 @@ class Form extends Component {
         <label htmlFor="date">Fecha:</label><br />
         <input type="date" id="date" name="date" /><br />
         <label htmlFor="abstract">Noticia:</label><br />
-        <input type="text" id="abstract" name="abstract" /><br />
+        <input type="textarea" id="abstract" name="abstract" /><br />
         <input type="submit" value="Crear" />
     </form>
     </div>;

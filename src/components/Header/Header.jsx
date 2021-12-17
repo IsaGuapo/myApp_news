@@ -17,7 +17,7 @@ class Header extends Component {
                         <h3>Hola {user.name}</h3>
                         <button onClick={logout}>Logout</button>
                     </> 
-                    : <h3>Adios</h3>//--> else  
+                    : <h4>Usted está desconectado</h4>//--> else  
                     
                 }
                 </userContext.Consumer>

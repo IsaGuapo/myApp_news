@@ -3,7 +3,7 @@ import './Footer.css';
 
 class Footer extends Component {
   render() {
-    return <div>Footer</div>;
+    return <div className="div_footer">Reat App -- Hecho con ❤ by Isa Guapo</div>;
   }
 }
 
