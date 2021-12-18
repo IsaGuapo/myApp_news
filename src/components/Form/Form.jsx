@@ -1,12 +1,21 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+
 // import { Link } from "react-router-dom";
 import './Form.css';
+import {Navigate} from 'react-router-dom';
 
 
 
 class Form extends Component {
   
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      redirect: false,
+    }
+  }
+
  //recojo info del formulario   
   handleSubmit = (event) => {
     event.preventDefault();
@@ -18,11 +27,16 @@ class Form extends Component {
   
     //Por aqui entran cada uno de los elementos del form
     this.props.createNews(section,title,published_date,abstract)
-   
+    this.setState({ redirect: true }); //cambiamos el state de redirect a True cuando se hace click 
   }
+   
+  
 
 
   render() {
+    if (this.state.redirect) {
+      return <Navigate to='/list'/>;
+    }
     return <div className="container">
       <h2 className="h2_form">Register News</h2>
         <form id="form" onSubmit={this.handleSubmit}>
@@ -39,11 +53,9 @@ class Form extends Component {
           <button>Add</button>
 
       </form>
-      <div className=".div.btn">
-        {/* <Link className="add_btn" to='/list' > Add </Link> */}
-      </div>
+      
     </div>;
   }
-}
 
+}
 export default Form;
