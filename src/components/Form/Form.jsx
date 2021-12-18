@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import './Form.css';
-import {Link} from 'react-router-dom';
+
+
 
 class Form extends Component {
+  
  //recojo info del formulario   
   handleSubmit = (event) => {
     event.preventDefault();
@@ -14,6 +17,7 @@ class Form extends Component {
   
     //Por aqui entran cada uno de los elementos del form
     this.props.createNews(section,title,published_date,abstract)
+   
  
   }
 
@@ -30,10 +34,13 @@ class Form extends Component {
           <input type="date" id="date" name="date" /><br />
           <label htmlFor="abstract">News:</label><br />
           <input type="textarea" id="abstract" name="abstract" /><br />
-          
+          <br>
+          </br>
+          {/* <button>Add</button> */}
+
       </form>
-      <div className="div.btn">
-        <Link className="add_btn" to='/list' > Add</Link>
+      <div className=".div.btn">
+        <Link className="add_btn" to='/list' > Add </Link>
       </div>
     </div>;
   }
