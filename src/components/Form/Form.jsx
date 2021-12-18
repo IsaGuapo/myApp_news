@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import './Form.css';
 
 
@@ -18,7 +19,6 @@ class Form extends Component {
     //Por aqui entran cada uno de los elementos del form
     this.props.createNews(section,title,published_date,abstract)
    
- 
   }
 
 
@@ -36,11 +36,11 @@ class Form extends Component {
           <input type="textarea" id="abstract" name="abstract" /><br />
           <br>
           </br>
-          {/* <button>Add</button> */}
+          <button>Add</button>
 
       </form>
       <div className=".div.btn">
-        <Link className="add_btn" to='/list' > Add </Link>
+        {/* <Link className="add_btn" to='/list' > Add </Link> */}
       </div>
     </div>;
   }
