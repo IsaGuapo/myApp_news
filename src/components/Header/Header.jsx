@@ -14,10 +14,10 @@ class Header extends Component {
                 //Usando fragment sin necesidad de escribirlo entre <> y usando un condicional ternario
                     ({user,logout}) => user.name?
                     <>
-                        <h3>Hola {user.name}</h3>
+                        <h3>Hello, {user.name}</h3>
                         <button onClick={logout}>Logout</button>
                     </> 
-                    : <h4>Usted está desconectado</h4>//--> else  
+                    : <h3>You are logout!</h3>//--> else  
                     
                 }
                 </userContext.Consumer>

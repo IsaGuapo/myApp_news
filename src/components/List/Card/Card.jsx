@@ -1,6 +1,5 @@
-import './Card.css';
 import React, { Component } from 'react';
-
+import './Card.css';
 
 
 export class Card extends Component {
@@ -17,11 +16,11 @@ export class Card extends Component {
       const {section,title,published_date,abstract} = this.props.info
       return (
         <div className="cards">
-            <p>Sección: {section} </p>
-            <p>Titular: {title} </p>
-            <p>Fecha:{published_date}</p>
-            <p>Noticia: {abstract}</p>
-            <button onClick={this.props.deleteNew}>Borrar</button>
+            <p className='p_class'>Section: {section} </p>
+            <p className='p_class'>Headline: {title} </p>
+            <p className='p_class'>Date:{published_date}</p>
+            <p className='p_class'>Abstract: {abstract}</p>
+            <button onClick={this.props.deleteNew}>Delete</button>
            
         </div>
     );

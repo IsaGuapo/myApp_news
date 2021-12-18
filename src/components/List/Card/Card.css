@@ -1,14 +1,15 @@
 
 .cards{
 
-    background-color: rgb(247, 245, 242);
-    border: 0.5px solid black;
-    border-radius: 16px;
-    width: 50%;
-    height: 30%; 
-    font-size: 12px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: black;
+    margin: 25px auto;
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 300px;
+    box-shadow: 7px 7px 15px #888685; 
+    border-radius: 5px;
+    background-color: #fffdfac4;
 
+}
+.p_class{
+    margin: 2px;
 }
