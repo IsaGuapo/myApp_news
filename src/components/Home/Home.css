@@ -1,0 +1,20 @@
+.home{
+    margin: 25px auto;
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 250px;
+    box-shadow: 7px 7px 15px #888685; 
+    border-radius: 5px;
+    background-color: #fffdfac4;
+    justify-content: center;
+}
+
+h2{
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+.login{
+    margin: 15px;
+    
+}

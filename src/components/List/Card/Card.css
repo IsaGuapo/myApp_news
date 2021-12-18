@@ -1,5 +1,15 @@
+
 .cards{
-    display: flex;
-    background-color: rgb(241, 237, 228);
-    border: 1px solid black;
+
+    margin: 25px auto;
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 300px;
+    box-shadow: 7px 7px 15px #888685; 
+    border-radius: 5px;
+    background-color: #fffdfac4;
+
+}
+.p_class{
+    margin: 2px;
 }
