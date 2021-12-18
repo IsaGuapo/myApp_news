@@ -1,10 +1,12 @@
 .div_footer{
     background-color: #003745;
     color: white;
-    width: 100%;
-    height: 8%;
-    position: fixed;
     bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    position: fixed;
+   
 }
 p {
     padding: 15px;
