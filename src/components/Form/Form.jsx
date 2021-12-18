@@ -5,13 +5,7 @@ import './Form.css';
 
 
 class Form extends Component {
-  constructor(props) {
-    super(props)
-     
-    this.state = {
-      redirect: false,
-    }
-  }
+  
  //recojo info del formulario   
   handleSubmit = (event) => {
     event.preventDefault();
@@ -23,7 +17,7 @@ class Form extends Component {
   
     //Por aqui entran cada uno de los elementos del form
     this.props.createNews(section,title,published_date,abstract)
-    this.setState({ redirect: true });
+   
  
   }
 
