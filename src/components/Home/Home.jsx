@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {userContext} from '../../Context/userContext'//se pegara esta linea en cada componente donde queremos usar el context
-
+import './Home.css';
 class Home extends Component {
   static contextType = userContext //coge el contexto que importamos y se lo pasa a la clase
 
@@ -25,12 +25,15 @@ class Home extends Component {
 
   render() {
     return <div>
-      <h1> Home</h1>
+      <div className="home">
+      <h2> Welcome to the App_News</h2>
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="name">Escriba su nombre de Usuario:</label><br />
+        <label htmlFor="name">User:</label><br />
         <input type="text" id="name" name="name" ref={this.name} /><br />
-        <input type="submit" value="Enviar"/>
+        <input className="login" type="submit" value="Login"/>
       </form>
+      </div>
+      
     </div>;
   }
 }

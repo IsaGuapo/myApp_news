@@ -23,7 +23,7 @@ class Main extends Component {
   render() {
     return <main>
       <Routes>
-          <Route path="/home" element ={<Home/>} />
+          <Route path="/" element ={<Home/>} />
           <Route path="/form" element ={<Form createNews={this.createNews}/>} />
           {/* Este state data nos da el estado del la creacion de la nueva noticia */}
           <Route path="/list" element ={<List stateData={this.state.addNew}/>} />  

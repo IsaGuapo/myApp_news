@@ -42,14 +42,9 @@ class List extends Component {
   render() {
             
             return <div>
-
-              <p> Precarga de 5 noticias de la API + las nuevas dadas de alta</p>
-              
+              <h2> Top Five</h2>
               {this.paintNews()}
-             
-            </div>
-            
-            
+            </div>         
   }
 }
 

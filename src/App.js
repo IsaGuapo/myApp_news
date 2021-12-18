@@ -8,6 +8,8 @@ import Footer from './components/Footer'
 import {BrowserRouter} from 'react-router-dom'
 import { userContext } from './Context/userContext';
 
+
+
 function App() {
   const [user, setUser] = useState({ name: "" })
   const login = name => setUser({ name }) //Cambia el estado con un nuevo nombre

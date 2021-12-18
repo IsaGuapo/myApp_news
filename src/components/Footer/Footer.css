@@ -1,7 +1,11 @@
 .div_footer{
-    background-color: rgba(7, 107, 110, 0.945);
+    background-color: #003745;
     color: white;
     width: 100%;
+    height: 8%;
     position: fixed;
     bottom: 0;
+}
+p {
+    padding: 15px;
 }

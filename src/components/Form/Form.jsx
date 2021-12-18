@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import './Form.css';
+import {Link} from 'react-router-dom';
 
 class Form extends Component {
  //recojo info del formulario   
@@ -17,20 +19,22 @@ class Form extends Component {
 
 
   render() {
-    return <div>
-      <h2>Alta de nueva Noticia</h2>
-
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="section">Sección:</label><br />
-        <input type="text" id="section" name="section" /><br />
-        <label htmlFor="titular">Titular:</label><br />
-        <input type="text" id="titular" name="titular" /><br />
-        <label htmlFor="date">Fecha:</label><br />
-        <input type="date" id="date" name="date" /><br />
-        <label htmlFor="abstract">Noticia:</label><br />
-        <input type="textarea" id="abstract" name="abstract" /><br />
-        <input type="submit" value="Crear" />
-    </form>
+    return <div className="container">
+      <h2 className="h2_form">Register News</h2>
+        <form id="form" onSubmit={this.handleSubmit}>
+          <label htmlFor="section">Section:</label><br />
+          <input type="text" id="section" name="section" /><br />
+          <label htmlFor="titular">Headline:</label><br />
+          <input type="text" id="titular" name="titular" /><br />
+          <label htmlFor="date">Date:</label><br />
+          <input type="date" id="date" name="date" /><br />
+          <label htmlFor="abstract">News:</label><br />
+          <input type="textarea" id="abstract" name="abstract" /><br />
+          
+      </form>
+      <div className="div.btn">
+        <Link className="add_btn" to='/list' > Add</Link>
+      </div>
     </div>;
   }
 }
