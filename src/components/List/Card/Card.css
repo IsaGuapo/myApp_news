@@ -13,3 +13,8 @@
 .p_class{
     margin: 2px;
 }
+
+.cards:last-child{
+    margin-bottom: 100px;
+    color:red;
+}
