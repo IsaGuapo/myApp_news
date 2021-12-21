@@ -18,7 +18,7 @@ export class Card extends Component {
         <div className="cards">
             <p className='p_class'>Section: {section} </p>
             <p className='p_class'>Headline: {title} </p>
-            <p className='p_class'>Date:{published_date}</p>
+            <p className='p_class'>Date:{published_date.substring(0,10)}</p>
             <p className='p_class'>Abstract: {abstract}</p>
             <button onClick={this.props.deleteNew}>Delete</button>
            
