@@ -47,7 +47,7 @@ class Form extends Component {
           <label htmlFor="date">Date:</label><br />
           <input type="date" id="date" name="date" /><br />
           <label htmlFor="abstract">News:</label><br />
-           <p><textarea name="newsDescript" placeholder="Escribe aqui la descripcion de la noticia" required></textarea></p>
+           <p><textarea name="abstract" placeholder="Escribe aqui la descripcion de la noticia" required></textarea></p>
           <br>
           </br>
           <button>Add</button>

@@ -38,8 +38,8 @@ class Main extends Component {
   }
 
   //funcion para crear noticias--relacionado con el form
-  createNews = (sectiontitle,published_date,abstract) => {
-    const news = {sectiontitle,published_date,abstract}
+  createNews = (section,title,published_date,abstract) => {
+    const news = {section,title,published_date,abstract}
   this.setState({ addNew: [...this.state.addNew, news] })
     
   }
@@ -50,7 +50,7 @@ class Main extends Component {
           <Route path="/" element ={<Home/>} />
           <Route path="/form" element ={<Form createNews={this.createNews} />} />
           {/* Este state data nos da el estado del la creacion de la nueva noticia */}
-          <Route path="/list" element ={<List stateData={this.state.addNew} deleteNew={this.deleteNew} componentDidMount={this.componentDidMount}/>} />  
+          <Route path="/list" element ={<List stateData={this.state.addNew} deleteNew={this.deleteNew}/>} />  
       </Routes>  
     </main>;
   }
